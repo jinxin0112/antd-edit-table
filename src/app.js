@@ -1,39 +1,3 @@
-# 基于 antd 组件库实现可编辑表格
-
-![](./assets/screen.png)
-
-
-该组件基于 Ant Design 的 React 实现，开发和服务于企业级后台产品。
-
-<div><img style="vertical-align: middle;" width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"><span style="font-size: 30px; color: #aaa; margin: 0 20px; vertical-align: middle;">+</span><img style="vertical-align: middle;" width="160" src="https://gw.alipayobjects.com/zos/rmsportal/tXlLQhLvkEelMstLyHiN.svg"></div>
-
-
-## 特性
-
-1.提炼表格列编辑，目前支持 `input` 和 `Select` 表单类型； 
-
-
-## 版本
-稳定版：v0.0.1
-
-## 安装
-使用 npm 或 yarn 安装
-
-**我们推荐使用 npm 或 yarn 的方式进行开发**，不仅可在开发环境轻松调试，也可放心地在生产环境打包部署使用，享受整个生态圈和工具链带来的诸多好处。
-
-```javascript
-$ npm install antd-edit-table --save
-```
-
-```javascript
-$ yarn add antd-edit-table
-```
-
-## 何时使用
-当表格涉及到内容的新增、删除和修改的时候；
-
-## 示例及代码演示
-```javascript
 import React from 'react';
 import TfEditTable from './components';
 
@@ -152,32 +116,3 @@ const Page = () => {
 }
 
 export default Page;
-```
-
-
-## API
-
-Table
-
-|参数|说明|类型|默认值|
-|:-|:-|:-|:-|
-| ... | antd table 的已有属性 | | |
-| rowKey | 表格行 key 的取值，字符串 | string | - |
-| addText | 新增一组数据的按钮文案，不传或空值不显示 | string | '新增' |
-| formData | 字段编辑时提供筛选的数据，介于此类数据来源是网络请求或固定数据。所以有 `xxxLoading` 和 `xxxDataDource`, `xxx` 是该字的 `dataIndex`, `xxxDataSource`中的每项只有 `key` 和 `label`，回调返回是 `label`, 这块数据需要开发人员手动梳理下格式 | object | - |
-
-
-Column
-
-列描述数据对象，是 columns 中的一项，Column 使用相同的 API。
-
-|参数|说明|类型|默认值|
-|:-|:-|:-|:-|
-| editable | 点击编辑时，该字段是否可更改 | boolean | |
-| formType | 该字段编辑时属于什么类型，目前支持 `input` 和 `select` | string | |
-| formTypeProps | 提供编辑字段的类型(`formType`)自身含有的属性和方法的唯一入口 | object | |
-| formTypeRules | 提供编辑字段的类型(`formType`)的一些校验规则 | object | - |
-
-> 注意：
-> 1.目前编辑表格不支持分页
-> 2.支持类型有 select 和 input

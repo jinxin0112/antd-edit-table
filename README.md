@@ -12,14 +12,14 @@
 
 ![](https://raw.githubusercontent.com/ruizhengyun/antd-edit-table/master/assets/screen.png)
 
-该组件基于 Ant Design 的 React 实现，开发和服务于企业级后台产品。
+该组件基于 Ant Design 的 React 实现，开发和服务于企业级后台产品。
 
 <div><img style="vertical-align: middle;" width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"><span style="font-size: 30px; color: #aaa; margin: 0 20px; vertical-align: middle;">+</span><img style="vertical-align: middle;" width="160" src="https://gw.alipayobjects.com/zos/rmsportal/tXlLQhLvkEelMstLyHiN.svg"></div>
 
 
 ## 特性
 
-1.提炼表格列编辑，目前支持 `input` 和 `Select` 表单类型； 
+1.提炼表格列编辑，目前支持 `input` 和 `Select` 表单类型； 
 
 
 ## 版本
@@ -184,9 +184,9 @@ Column
 |:-|:-|:-|:-|
 | editable | 点击编辑时，该字段是否可更改 | boolean | |
 | formType | 该字段编辑时属于什么类型，目前支持 `input` 和 `select` | string | |
-| formTypeProps | 提供编辑字段的类型(`formType`)自身含有的属性和方法的唯一入口 | object | |
-| formTypeRules | 提供编辑字段的类型(`formType`)的一些校验规则 | object | - |
+| formTypeProps | 提供编辑字段的类型(`formType`)自身含有的属性和方法的唯一入口 | object | |
+| formTypeRules | 提供编辑字段的类型(`formType`)的一些校验规则 | object | - |
 
 > 注意：
-> 1.目前编辑表格不支持分页
+> 1.目前编辑表格不支持分页
 > 2.支持类型有 select 和 input

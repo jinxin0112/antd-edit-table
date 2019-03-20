@@ -10,8 +10,7 @@
   <img src="https://img.shields.io/badge/developing%20with-antd%20%3E%20table-brightgreen.svg">
 </p>
 
-![](./assets/screen.png)
-
+![](https://raw.githubusercontent.com/ruizhengyun/antd-edit-table/master/assets/screen.png)
 
 该组件基于 Ant Design 的 React 实现，开发和服务于企业级后台产品。
 
